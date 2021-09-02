@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>
+            Project C78
+        </title>
+
+        <link rel="stylesheet" href="style.css" type="text/css">
+
+    </head>
+    <body>
+        
+          <h1>Family Book</h1>
+          <img id="family" src="The-family-book-e1417314391978 (1).jpg">
+          <h2 id="name"></h2>
+          <button id="next" onclick="goose()">next</button>
+          
+        
+
+        <script src="main.js">
+var familymember=["mom.png","dad.png","me.jpg","bg sis.jpg","dadu.jpg","dadi.jpg"];
+console.log(familymember);
+var family_name=["mom","dad","me","big sister","dadu","dadi"]
+i=0;
+var member_num="5";
+function goose(){
+    i++;
+    if(i>member_num){
+        i=0;
+        var update_image=familymember[i];
+        var update_name=family_name[i];
+        console.log(update_image);
+        console.log(update_name);
+        document.getElementById("family").src=update_image;
+        document.getElementById("name").innerHTML=update_name;
+    }
+}
+
+        </script>
+    </body>
+</html>
