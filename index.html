@@ -8,33 +8,19 @@
 
     </head>
     <body>
-        
-          <h1>Family Book</h1>
-          <img id="family" src="The-family-book-e1417314391978 (1).jpg">
-          <h2 id="name"></h2>
-          <button id="next" onclick="goose()">next</button>
+        <center style="margin-top: 40px;">
+            <h1>
+                My Family Book
+            </h1>
+
+            <img src="https://i.postimg.cc/MKdhy06Z/family.jpg" id="family_member_image" width="150px" height="200px">
+            <h4 id="family_member_name"></h4>
+            <button onclick="update()" >Next</button>
+           <!-- Debug the above code to create a button with onclick functionality as given below-->
+            <!-- <button onclick="update();">Next</button>  -->
           
-        
+        </center>
 
-        <script src="main.js">
-var familymember=["mom.png","dad.png","me.jpg","bg sis.jpg","dadu.jpg","dadi.jpg"];
-console.log(familymember);
-var family_name=["mom","dad","me","big sister","dadu","dadi"]
-i=0;
-var member_num="5";
-function goose(){
-    i++;
-    if(i>member_num){
-        i=0;
-        var update_image=familymember[i];
-        var update_name=family_name[i];
-        console.log(update_image);
-        console.log(update_name);
-        document.getElementById("family").src=update_image;
-        document.getElementById("name").innerHTML=update_name;
-    }
-}
-
-        </script>
+        <script src="main.js"></script>
     </body>
 </html>
